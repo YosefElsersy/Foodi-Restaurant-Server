@@ -10,6 +10,7 @@ const getAllUsers = async (req, res) => {
   }
 };
 
+
 // post a new user
 const createUser = async (req, res) => {
   const user = req.body;
@@ -25,6 +26,9 @@ const createUser = async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 };
+
+
+
 
 
 // delete a user
